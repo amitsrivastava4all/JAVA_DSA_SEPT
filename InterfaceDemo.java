@@ -1,4 +1,5 @@
 // abstract interface IPlayer
+// all methods of interface are public
 interface IPlayer{ // What to do (100% Abstract)
     int MAX_POWER = 100; // public static final int MAX_POWER=100
     void kick();  // public abstract void kick()
@@ -7,7 +8,22 @@ interface IPlayer{ // What to do (100% Abstract)
     void walk();
     void punch(int power);
 }
-class Ken implements IPlayer{
+abstract class GenericPlayer implements IPlayer{
+    @Override
+    public void walk(){
+        System.out.println("Walk Slow...");
+    }
+}
+interface IExtra{
+    void hide();
+    void size();
+}
+// interface can inherit another interface (Interface can inherit N Interfaces)
+// but class can implement another interface
+interface IHybridPlayer extends IPlayer, IExtra{
+
+}
+class Ken extends GenericPlayer implements IPlayer{
 
     @Override
     public void kick() {
@@ -42,7 +58,9 @@ class Ken implements IPlayer{
     }
     
 }
-class Ryu implements IPlayer{
+// One class implements N Interfaces
+// one class inherit only one class
+class Ryu extends GenericPlayer implements IPlayer, IExtra{
 
     @Override
     public void kick() {
@@ -71,6 +89,18 @@ class Ryu implements IPlayer{
 
     @Override
     public void punch(int power) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void hide() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void size() {
         // TODO Auto-generated method stub
         
     }
