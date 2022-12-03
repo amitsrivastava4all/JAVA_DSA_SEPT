@@ -1,0 +1,30 @@
+Why u do overriding?
+
+When some feature is coming from parent and it is outdated for child.
+So child will override it , override hide the parent method.
+
+@override - This is the Annotation, Purpose is to tell the compiler we are doing overriding.
+
+When u override the parent method the signature must be same as parent.
+void show(int x, int y); // method signature
+Signature 
+Method name
+Method return type
+Method arguments
+
+
+Method Overloading —
+Method name is same , but argument must be different.
+Why u need overloading.
+e.g search
+search(String productName)
+search(double price)
+search(String productName, double price)
+search(double qty, String brandName)
+
+Overloading
+1. Number of Argument can be different
+2. Type of Argument can be different
+3. Order of Argument can be different
+
+
