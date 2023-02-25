@@ -1,0 +1,26 @@
+https://leetcode.com/problems/two-sum/
+
+https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1
+
+
+Find the 2 missing number
+
+Remove Duplicate Elements from the Array, and Array is Sorted.
+
+
+Build a Dynamic Array as You know array is fixed size, but try to make it like ArrayList.
+CRUD Dynamic Array
+
+
+Find the First , Second , Third Largest Element in an Array
+
+Find the Nth Largest Element in an Array
+
+
+https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
+
+Try These Solution in Iterative and Recursion Way
+
+Array is Sorted or Not 
+
+
